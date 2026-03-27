@@ -43,7 +43,7 @@ if page == "Model Simulation":
 
     S, K_hist = cloud_storage_model(S0, r, K, U, days, threshold, expansion)
 
-    fig, ax = plt.subplots()
+    fig, ax = plt.subplots(figsize=(5, 3))
     ax.plot(S, label="Storage")
     ax.plot(K_hist, linestyle='--', label="Capacity")
     ax.legend()
